@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <style>
     body {
-      font-family: Times;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
     }
 
@@ -35,11 +35,35 @@
       color: brown;
     }
 
-    .section {
-      padding: 50px;
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      position: relative;
       text-align: center;
-      background-color: #474e5d;
       color: white;
+    }
+
+    .about-section img {
+      width: 100%;
+    }
+
+    .section-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     .container {
@@ -72,18 +96,6 @@
       background-color: #555;
     }
 
-    .column {
-      float: left;
-      width: 33.3%;
-      margin-bottom: 16px;
-      padding: 0 8px;
-    }
-
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      margin: 8px;
-    }
-
     @media screen and (max-width: 650px) {
       .column {
         width: 100%;
@@ -91,99 +103,64 @@
       }
     }
   </style>
-</head>  
+</head>
 <body>
 
 <div class="navbar">
   <a href="#home">Home</a>
-  <a href="#videography">Videography</a>
-  <a href="#spoken-word">Spoken Word</a>
+  <a href="#team">Our Team</a>
 </div>
 
-<div id="home" class="section">
-  <h1>Welcome!</h1>
-  <p>My name is [Your Name]. Add your details here.</p>
-  <p>Resize the browser window to see that this page is responsive, by the way.</p>
+<div id="home" class="about-section">
+  <img src="photocollage.jpg" alt="Photo Collage">
+  <div class="section-content">
+    <h1>Welcome!</h1>
+    <p>My name is [Your Name]. Add your details here.</p>
+    <p>Resize the browser window to see that this page is responsive, by the way.</p>
+  </div>
 </div>
 
-<div id="videography" class="section">
-  <h2>Videography</h2>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="path/to/videography1.jpg" alt="Video 1" style="width:100%">
-        <div class="container">
-          <h2>Video 1</h2>
-          <p>Description for Video 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><button class="button">Watch</button></p>
-        </div>
+<h2 style="text-align:center" id="team">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
+  </div>
 
-    <div class="column">
-      <div class="card">
-        <img src="path/to/videography2.jpg" alt="Video 2" style="width:100%">
-        <div class="container">
-          <h2>Video 2</h2>
-          <p>Description for Video 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><button class="button">Watch</button></p>
-        </div>
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
+  </div>
 
-    <div class="column">
-      <div class="card">
-        <img src="path/to/videography3.jpg" alt="Video 3" style="width:100%">
-        <div class="container">
-          <h2>Video 3</h2>
-          <p>Description for Video 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><button class="button">Watch</button></p>
-        </div>
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
 </div>
-
-<div id="spoken-word" class="section">
-  <h2>Spoken Word</h2>
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="path/to/spoken-word1.jpg" alt="Spoken Word 1" style="width:100%">
-        <div class="container">
-          <h2>Spoken Word 1</h2>
-          <p>Description for Spoken Word 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><button class="button">Listen</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card">
-        <img src="path/to/spoken-word2.jpg" alt="Spoken Word 2" style="width:100%">
-        <div class="container">
-          <h2>Spoken Word 2</h2>
-          <p>Description for Spoken Word</p>
-          <p>Description for Spoken Word 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><button class="button">Listen</button></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card">
-        <img src="path/to/spoken-word3.jpg" alt="Spoken Word 3" style="width:100%">
-        <div class="container">
-          <h2>Spoken Word 3</h2>
-          <p>Description for Spoken Word 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><button class="button">Listen</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Add more sections as needed -->
 
 </body>
 </html>
