@@ -84,11 +84,20 @@
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       margin: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .column img {
       width: 100%;
       height: auto;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     @media screen and (max-width: 650px) {
@@ -127,21 +136,48 @@
 </div>
 
 <div id="spoken-word" class="section">
-  <h2>Spoken Word</h2>
+   <h1 style="color:#253239; font-size: 50px">SPOKEN WORD</h1>
   <div class="row">
     <div class="column">
       <div class="card">
-        <img src="path/to/spoken-word1.jpg" alt="Spoken Word 1" style="width:100%">
+        <img src="spokenword1.png" alt="Spoken Word 1">
         <div class="container">
           <h2>Spoken Word 1</h2>
           <p>Description for Spoken Word 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><button class="button">Listen</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="spokenword3.png" alt="Spoken Word 3">
+        <div class="container">
+          <h2>Spoken Word 2</h2>
+          <p>Description for Spoken Word 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="spokenword2.png" alt="Spoken Word 2">
+        <div class="container">
+          <h2>Spoken Word 3</h2>
+          <p>Description for Spoken Word 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <img src="spokenword4.png" alt="Spoken Word 4">
+        <div class="container">
+          <h2>Spoken Word 4</h2>
+          <p>Description for Spoken Word 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
     </div>
     <!-- Add more spoken word sections as needed -->
   </div>
 </div>
+
 
 <div id="photography" class="section">
   <h2>Photography</h2>
@@ -179,8 +215,8 @@
 <script>
   function scrollToSection(sectionId) {
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
+ 
+
 
 </body>
 </html>
