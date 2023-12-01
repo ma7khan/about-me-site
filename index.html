@@ -177,6 +177,22 @@
 }
     }
     
+    table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    
     #contact h1 {
       font-size: 60px; /* Adjust the font size as needed */
     }
@@ -211,6 +227,8 @@
 #photography .photo-gallery::-webkit-scrollbar {
   display: none;
 }
+    
+    
 
   </style>
 </head>
@@ -222,6 +240,7 @@
   <a onclick="scrollToSection('spoken-word')">Spoken Word</a>
   <a onclick="scrollToSection('photography')">Photography</a>
   <a onclick="scrollToSection('videography')">Videography</a>
+  <a onclick="scrollToSection('experience')">Experience</a>
   <a onclick="scrollToSection('contact')">Contact Me</a>
 </div>
   
@@ -356,7 +375,8 @@
     <img src="u4.JPG" alt="u4" style="width:50%; height:50%;">
     <img src="u5.JPG" alt="u5" style="width:50%; height:50%;">
     <img src="u6.JPG" alt="u6" style="width:50%; height:50%;">
-    <img src="u7.JPG" alt="u7" style="width:50%; height:50%;"> <img src="o29.JPG" alt="o29" style="width:50%; height:50%;">
+    <img src="u7.JPG" alt="u7" style="width:50%; height:50%;"> 
+   <img src="o29.JPG" alt="o29" style="width:50%; height:50%;">
     <img src="o27.JPG" alt="o27" style="width:50%; height:50%;">
     <img src="o28.JPG" alt="o28" style="width:50%; height:50%;">
   </div>
@@ -429,7 +449,7 @@
     <img src="f24.jpg" alt="f24" style="width:50%; height:50%"> 
   </div>
     
-  <h4These are photos I took for a poet, Bianca Modi's book.</h4>
+  <h4>These are photos I took for a poet, Bianca Modi's book.</h4>
   
 <div class="photo-gallery">
     <img src="f25.JPG" alt="f25" style="width:50%; height:50%">  
@@ -468,9 +488,10 @@
   <h3>Activitsm photography allows me to capture the essence of a movement, the power in peoples
     faces and voices and they chant, protest and march. I am able to capture photos of thier
     signs and spread thier messages beyond that moment in time, sharing it on social media,
-    spreading the word.</h3>
+    spreading the word. Below, feel free to browse photos i've taken at various protests
+  over the past 3 years.</h3>
   
-  <h4>These photos are from the Free Palestine protests 2023 in Toronto over the past couple of weeks.</h4>
+  <h4>FREE PALESTINE PROTESTS, 2023 IN TORONTO</h4>
   
 <div class="photo-gallery">
     <img src="p1.JPG" alt="p1" style="width:50%; height:50%">  
@@ -497,7 +518,7 @@
     <img src="p18.jpg" alt="p18" style="width:50%; height:50%"> 
   </div>
   
-  <h4>These photos are from the Free Palestine protest in 2021 in the GTA.</h4>
+  <h4>FREE PALESTINE PROTEST, 2021 IN THE GTA</h4>
   
    <div class="photo-gallery">
       <img src="p29.jpg" alt="p29" style="width:50%; height:50%"> 
@@ -507,7 +528,7 @@
       <img src="p34.jpg" alt="p34" style="width:50%; height:50%"> 
   </div>
 
-<h4>These photos are from the BLM protests in 2020 in the GTA.</h4>
+<h4>BLACK LIVES MATTER PROTEST,  2020 IN THE GTA.</h4>
   
   
    <div class="photo-gallery">
@@ -595,6 +616,68 @@
   </div>
 </div>
  
+<div id="experience" class="section">
+   <h1>EXPERIENCE</h1>
+   <h2>Work Experience</h2>
+    <table>
+        <tr>
+            <th>Duration</th>
+            <th>Position</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>May - August 2022</td>
+            <td>Marketing Manager and Videographer</td>
+            <td>SMILE Canada</td>
+        </tr>
+      <tr> 
+        		<td>June 2023 - Present</td>
+            <td>Social Media Manager</td>
+            <td>Syrian Canadian Foundation</td>
+      </tr>
+       <tr>
+						<td>March 2020 - Present</td>
+            <td>Freelance Photographer</td>
+            <td>Self-employed</td>
+        </tr>
+    </table>
+
+    <h2>Volunteer Experience</h2>
+    <table>
+        <tr>
+            <th>Duration</th>
+            <th>Position</th>
+            <th>Organization</th>
+        </tr>
+        <tr>
+            <td>December 2021-2022</td>
+            <td>Photographer</td>
+            <td>Contrapposto Magazine</td>
+        </tr>
+      <tr>
+						<td>January 2017 - Present</td>
+            <td>Photographer, Videographer, Social Media Content Creator</td>
+            <td>Stay Woke Organization</td>
+        </tr>
+      <tr>
+						<td>September 2021 - 2022</td>
+            <td>Director of Cinematography</td>
+            <td>Suddenly Opportunities Are Reachable</td>
+        </tr>
+       <tr>
+						<td>September 2019 - January 2020</td>
+            <td>Executive Videographer</td>
+            <td>Childrens Christmas Party</td>
+        </tr>
+      <tr>
+						<td>Janary 2017 - Presend</td>
+            <td>Event Photographer</td>
+            <td>Noon Academy Education and Community Center</td>
+        </tr>
+      
+  </table>
+
+</div>
  
 
   <div id="contact" class="section">
@@ -618,10 +701,10 @@
 
 <script>
   function scrollToSection(sectionId) {
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
   }
 </script>
-
 
 </body>
 </html>
