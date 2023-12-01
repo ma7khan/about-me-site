@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <style>
     body {
-      font-family: Times;
       margin: 0;
     }
 
@@ -16,28 +15,38 @@
       box-sizing: inherit;
     }
     
- .container h2 {
-    color: #253239;  
-  }
     
-        
- .container h4 {
-    color: #ffffff;  
-  }
+   p {
+      font-family: "Times", sans-serif;
+      font-size: 18px;
+    }
     
-    .container h3 {
-    color: #253239;  
-  }
+     h1{
+      font-family: "Times", sans-serif;
+      color:#253239; 
+      font-size: 50px
+    }
     
-    .container h1 {
-    color: #ffffff;  
-  }
+     h2{
+      font-family: "Times", sans-serif;
+      font-size: 24px;
+      color: #253239;  
+    }
     
-     h4 {
-    background: #253239; /* Background color of the box */
-    padding: 10px; /* Padding inside the box */
-    display: inline-block; /* Make the box only as wide as the content */
-  }
+     h3{
+      font-family: "Times", sans-serif;
+      font-size: 20px;
+    }
+    
+     h4{
+      font-family: "Times", sans-serif;
+      font-size: 16px;
+      background: #253239; /* Background color of the box */
+    	padding: 10px; /* Padding inside the box */
+    	display: inline-block; /* Make the box only as wide as the content */
+    }
+    
+   
     
     .navbar {
   overflow: hidden;
@@ -58,7 +67,6 @@
   text-decoration: none;
   cursor: pointer;
   height: 100%;
-  display: flex;
   align-items: center;
 }
 
@@ -179,6 +187,24 @@
       margin-right: 20px; /* Adjust the spacing between icons */
       cursor: pointer;
     }
+    
+    #photography .photo-gallery {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+#photography .photo-gallery img {
+  width: 25%; /* Adjust the width of each image */
+  height: auto;
+  margin-right: 10px; /* Adjust the margin between images */
+}
+
+/* Optional: Hide the horizontal scrollbar */
+#photography .photo-gallery::-webkit-scrollbar {
+  display: none;
+}
+
   </style>
 </head>
 <body>
@@ -198,13 +224,13 @@
 
 <div id="about" class="section">
   <div class="column">
-    <h1 style="color:#253239; font-size: 50px">ABOUT ME</h1>
-    <p style="font-size: 22px;">My name is Monia Bhutta-Khan. I am 19 years old, and 
+    <h1>ABOUT ME</h1>
+    <h3>My name is Monia Bhutta-Khan. I am 19 years old, and 
       currently in my 2nd year of the Global Business and Digital Arts Program at the University 
-      of Waterloo. </p>
-    <p style="font-size: 22px;">I enjoy different creative outlets that help me express how I feel,
+      of Waterloo. </h3>
+    <h3>I enjoy different creative outlets that help me express how I feel,
     and allow me to be my authentic self. Follow my journey as a videographer, photographer and spoken
-    word artist.</p>
+    word artist.</h3>
     <p style="color: your_desired_color;"></p>
   </div>
   <div class="column">
@@ -301,7 +327,7 @@
 
 
 <div id="photography" class="section">
-     <h1 style="color:#253239; font-size: 50px">PHOTOGRAPHY</h1>
+     <h1>PHOTOGRAPHY</h1>
   <h3>I started photography at the age of 12 because I always found myself taking photos
     of nature on my parents phone, and eventually mine when I got one in grade 6.
   In grade 7 my parents bought me a camera, a sony a6000, which is still the camera
@@ -313,35 +339,40 @@
   since then. 
   </h3>
   
-  <main class="grid">
-    <img src="u1.JPG" alt="u1" style="width:25%; height:auto;">
-    <img src="u3.JPG" alt="u3" style="width:25%; height:auto;">
-    <img src="u4.JPG" alt="u4" style="width:25%; height:auto;">
-    <img src="u5.JPG" alt="u5" style="width:25%; height:auto;">
-    <img src="u6.JPG" alt="u6" style="width:25%; height:auto;">
-    <img src="u7.JPG" alt="u7" style="width:25%; height:auto;">
-    <img src="u11.jpg" alt="u11" style="width:25%; height:auto;">
-    <img src="u12.jpg" alt="u12" style="width:25%; height:auto;">
-    <img src="u13.jpg" alt="u13" style="width:25%; height:auto;">
-    <img src="o10.JPG" alt="o10" style="width:25%; height:auto;">
-    <img src="o4.JPG" alt="o4" style="width:25%; height:auto;">
-    <img src="o26.JPG" alt="o26" style="width:25%; height:auto;">
-    <img src="o3.JPG" alt="o3" style="width:25%; height:auto;">
-    <img src="o11.JPG" alt="o11" style="width:25%; height:auto;">
-    <img src="o20.JPG" alt="o20" style="width:25%; height:auto;">
-    <img src="o13.JPG" alt="o13" style="width:25%; height:auto;">
-    <img src="o8.JPG" alt="o8" style="width:25%; height:auto;">
-    <img src="o19.JPG" alt="o19" style="width:25%; height:auto;">
-    <img src="o15.jpg" alt="o15" style="width:25%; height:auto;">
-    <img src="o25.JPG" alt="o25" style="width:25%; height:auto;">
-    <img src="o22.JPG" alt="o22" style="width:25%; height:auto;"> 
-    <img src="o18.JPG" alt="o18" style="width:25%; height:auto;">
-    <img src="o12.JPG" alt="o12" style="width:25%; height:auto;">
-    <img src="o9.JPG" alt="o9" style="width:25%; height:auto;">
-    <img src="o29.JPG" alt="o29" style="width:25%; height:auto;">
-    <img src="o27.JPG" alt="o27" style="width:25%; height:auto;">
-    <img src="o28.JPG" alt="o28" style="width:25%; height:auto;">
- </main>
+ <div class="photo-gallery">
+    <img src="u1.JPG" alt="u1" style="width:50%; height:50%;">
+    <img src="u3.JPG" alt="u3" style="width:50%; height:50%;">
+    <img src="u4.JPG" alt="u4" style="width:50%; height:50%;">
+    <img src="u5.JPG" alt="u5" style="width:50%; height:50%;">
+    <img src="u6.JPG" alt="u6" style="width:50%; height:50%;">
+    <img src="u7.JPG" alt="u7" style="width:50%; height:50%;"> <img src="o29.JPG" alt="o29" style="width:50%; height:50%;">
+    <img src="o27.JPG" alt="o27" style="width:50%; height:50%;">
+    <img src="o28.JPG" alt="o28" style="width:50%; height:50%;">
+  </div>
+  <div class="photo-gallery">
+    <img src="u11.jpg" alt="u11" style="width:50%; height:50%;">
+    <img src="u12.jpg" alt="u12" style="width:50%; height:50%;">
+    <img src="u13.jpg" alt="u13" style="width:50%; height:50%;">
+   </div>
+   <div class="photo-gallery">
+    <img src="o10.JPG" alt="o10" style="width:50%; height:50%;">
+    <img src="o4.JPG" alt="o4" style="width:50%; height:50%;">
+    <img src="o26.JPG" alt="o26" style="width:50%; height:50%;">
+    <img src="o3.JPG" alt="o3" style="width:50%; height:50%;">
+    <img src="o11.JPG" alt="o11" style="width:50%; height:50%;">
+    <img src="o20.JPG" alt="o20" style="width:50%; height:50%;">
+    <img src="o13.JPG" alt="o13" style="width:50%; height:50%;">
+    <img src="o8.JPG" alt="o8" style="width:50%; height:50%;">
+    <img src="o19.JPG" alt="o19" style="width:50%; height:50%;">
+    <img src="o18.JPG" alt="o18" style="width:50%; height:50%;">
+    <img src="o12.JPG" alt="o12" style="width:50%; height:50%;">
+    <img src="o9.JPG" alt="o9" style="width:50%; height:50%;">
+    <img src="o15.jpg" alt="o15" style="width:50%; height:50%;">
+    <img src="o25.JPG" alt="o25" style="width:50%; height:50%;">
+    <img src="o22.JPG" alt="o22" style="width:50%; height:50%;"> 
+    
+   
+ </div>
   
   <h3>When covid hit and we couldn't travel anymore, I was forced to step outside of my comfort
     zone and delve into different types of photography.
@@ -483,7 +514,7 @@
 </html>
 
 <div id="videography" class="section">
-  <h1 style="color:#253239; font-size: 50px">VIDEOGRAPHY</h1>
+  <h1>VIDEOGRAPHY</h1>
    <h3>I started getting into videography in 2020, attending protests for Palestine and BLM. Not only did
     I photograph, but I also recorded the march, speeches, chants and posters, with the intention to make
      a highlights video to use my platform to uplift the messages of the Black Community. I really enjoy
@@ -552,16 +583,16 @@
  
 
 <div id="contact" class="section">
-  <h1 style="color:#253239; font-size: 50px">CONTACT ME</h1>
+  <h1>CONTACT ME</h1>
   <div class="social-icons">
     <a href="https://instagram.com/moniabk3?igshid=YTQwZjQ0NmI0OA==" target="_blank">
-      <img src="instagram.png" alt="Instagram" style="width:15%; height:auto">
+      <img src="instagram.png" alt="Instagram" style="width:12%; height:auto">
     </a>
     <a href="https://www.tiktok.com/@moniabhuttakhan?_t=8hoQTk7qWHO&_r=1" target="_blank">
-      <img src="tiktok.png" alt="TikTok" style="width:15%; height:auto">
+      <img src="tiktok.png" alt="TikTok" style="width:12%; height:auto">
     </a>
     <a href="mailto:m7khan@uwaterloo.ca" style="font-size: 26px;">
-      <img src="gmail.png" alt="Gmail" style="width:15%; height:auto">
+      <img src="gmail.png" alt="Gmail" style="width:12%; height:auto">
     </a>
   </div>
 </div>
@@ -577,6 +608,10 @@
 
 </body>
 </html>
+
+
+
+
 
 
 
